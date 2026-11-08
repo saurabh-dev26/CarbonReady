@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#68dba9","surface-tint":"#4edea3","surface-container":"#19211f","on-error":"#690005","error-container":"#93000a","on-tertiary-fixed-variant":"#334f00","on-secondary-container":"#00311f","surface-container-lowest":"#08100e","secondary-container":"#25a475","primary":"#4edea3","inverse-on-surface":"#2a3230","on-secondary":"#003825","surface-container-highest":"#2e3634","on-primary-fixed":"#002113","secondary":"#68dba9","on-secondary-fixed-variant":"#005137","on-background":"#dce4e1","tertiary-fixed":"#b2f746","surface-container-low":"#151d1b","primary-fixed-dim":"#4edea3","secondary-fixed":"#85f8c4","error":"#ffb4ab","on-surface":"#dce4e1","surface-container-high":"#232c29","surface-bright":"#333b38","tertiary-container":"#78b300","on-primary-container":"#00422b","on-tertiary-container":"#283f00","tertiary-fixed-dim":"#98da27","outline-variant":"#3c4a42","surface":"#0d1513","inverse-surface":"#dce4e1","on-primary":"#003824","primary-container":"#10b981","primary-fixed":"#6ffbbe","inverse-primary":"#006c49","on-secondary-fixed":"#002114","background":"#0d1513","on-surface-variant":"#bbcabf","tertiary":"#98da27","surface-dim":"#0d1513","outline":"#86948a","on-error-container":"#ffdad6","on-tertiary-fixed":"#121f00","on-primary-fixed-variant":"#005236","on-tertiary":"#213600","surface-variant":"#2e3634"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem",margin:"1rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","gutter-desktop":"1.5rem",gutter:"1rem"},fontFamily:{"label-mono":["JetBrains Mono"],"headline-lg":["Geist"],"headline-sm":["Geist"],"body-md":["Inter"],"body-sm":["Inter"],"metric-md":["JetBrains Mono"],"display-lg":["Geist"],"body-lg":["Inter"],"metric-xl":["JetBrains Mono"],"headline-md":["Geist"],"label-ui":["Inter"],"display-lg-mobile":["Geist"]},fontSize:{"label-mono":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"metric-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"500"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"metric-xl":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"500"}],"label-ui":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest/60"><div class="flex items-center gap-space-sm"><img alt="CarbonReady Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA_MTqPYCc3mmLecVYdzHnfGHIAniQdkJe00OHSqssY1S7D4zWFGGZsGUotHnZqXT2wvxM5oKKqkt_Q7BXPHE0ggCeDCWHQZq9-YPFnxcGlgVqQLXeOLtkRf5s1E6SYKchLuYR4MCkaHbSvOPOPX1KoxF0HPcuhScqZbJXFEKMGfhUYBGEubVlbH8HUSh9gOQKw_4I71suZUdn_ZmmCQepb69D0McKQxv8Yt_xRNEWN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CarbonReady</span><span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Copilot OS</span></div></div><div class="flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-mono text-label-mono text-on-surface-variant">v2.4</span></div></div><div class="px-space-md py-space-sm bg-surface-container"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-base">factory</span><div class="truncate"><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Apex Steels &amp; Alloys Ltd</p><p class="font-label-mono text-label-mono text-on-surface-variant truncate">Ludhiana Works · IND-PB-7749</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer hover:text-on-surface">unfold_more</span></div></div><nav class="flex flex-col gap-space-xs p-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(16,185,129,0.2)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-md text-body-md flex-1">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="voice-assistant" href="#"><span class="material-symbols-outlined text-lg">mic</span><span class="font-body-md text-body-md flex-1">Voice Assistant</span><span class="font-label-mono text-label-mono px-1 rounded bg-surface-container-highest text-primary">AI</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manufacturing-data" href="#"><span class="material-symbols-outlined text-lg">precision_manufacturing</span><span class="font-body-md text-body-md flex-1">Manufacturing Data</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carbon-intelligence" href="#"><span class="material-symbols-outlined text-lg">biotech</span><span class="font-body-md text-body-md flex-1">Carbon Intelligence</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-lg">verified_user</span><span class="font-body-md text-body-md flex-1">Compliance Reports</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="green-improvements" href="#"><span class="material-symbols-outlined text-lg">trending_up</span><span class="font-body-md text-body-md flex-1">Green Improvements</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="government-schemes" href="#"><span class="material-symbols-outlined text-lg">account_balance</span><span class="font-body-md text-body-md flex-1">Government Schemes</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="report-history" href="#"><span class="material-symbols-outlined text-lg">history_edu</span><span class="font-body-md text-body-md flex-1">Audit History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-md text-body-md flex-1">Settings &amp; Languages</span></a></nav></div><div class="p-space-md bg-surface-container-lowest/80 flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">EU Customs Registry</span><span class="font-label-mono text-label-mono text-primary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>XML v2.4</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">Audit Hash Key</span><span class="font-label-mono text-label-mono text-on-surface">0x7F2...CB49</span></div></div><div class="flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-high/60"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-base">support_agent</span><span class="font-label-mono text-label-mono text-on-surface-variant">MSME CBAM Desk</span></div><div class="flex items-center gap-1"><span class="font-label-mono text-label-mono text-tertiary-fixed font-semibold">WHATSAPP SYNC</span><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-primary text-base">verified</span><span class="font-label-mono text-label-mono text-primary font-medium tracking-wide uppercase">EU CBAM Q2-2025: 92% Ready</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="material-symbols-outlined text-tertiary text-sm">science</span><span class="font-label-mono text-label-mono text-tertiary uppercase">Simulation Mode / Demo Benchmark Data</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-high rounded-full p-0.5"><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono bg-surface-container-highest text-on-surface font-semibold">English</button><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">हिंदी</button><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">मराठी</button></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low/70 py-1 pr-space-md rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALT2g1-JELNL7J44enuvi8dyOAEJO6X8TrC8eBMQLw3KoXgvLi4-M4Qvwrpao_ajbV267oDimgvqrTz5aU10KCeYlUPnDH-MYeJK4syUOSA9auWQDB3RVKeV_0y8ATjxYalQBH9QQ2R-5hVkiXBj89_CEhyekuTjmPvsB43Xz3IxQUiuctdbf6qy-ctz2LvSSbdlp87tkb4HUfZYKL-Xjao1IznwBo3-X2LaiRHOI"/><div class="hidden lg:flex flex-col text-left"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Rajesh Sharma</span><span class="font-label-mono text-label-mono text-on-surface-variant">MD · Ludhiana Works</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high font-label-mono text-label-mono text-primary uppercase tracking-wider">Onboarding Sequence · Step 02</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">EU Regulation 2023/956 Spec</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low font-label-mono text-label-mono text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>BENCHMARK HARMONIZATION ACTIVE</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Plant Onboarding &amp; Baseline Activity Setup</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Configure your manufacturing route, emission boundaries, and energy baselines for EU CBAM &amp; BRSR reporting.</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded font-label-mono text-label-mono bg-primary text-on-primary font-semibold">English</button>
+<button class="px-space-sm py-1 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">हिन्दी</button>
+<button class="px-space-sm py-1 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">मराठी</button>
+<button class="px-space-sm py-1 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">ਪੰਜਾਬੀ</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-label-mono text-label-mono text-primary uppercase leading-tight">Step 01 · Completed</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Apex Steels (Ludhiana)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-highest shadow-sm">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-mono text-label-mono font-bold">
+        02
+      </div>
+<div class="flex flex-col truncate">
+<span class="font-label-mono text-label-mono text-primary uppercase leading-tight">Step 02 · In Flight</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Production Route &amp; Furnaces</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-mono text-label-mono">
+        03
+      </div>
+<div class="flex flex-col truncate">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase leading-tight">Step 03 · Queued</span>
+<span class="font-body-md text-body-md text-on-surface-variant truncate">Energy &amp; Raw Material Feeds</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-mono text-label-mono">
+        04
+      </div>
+<div class="flex flex-col truncate">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase leading-tight">Step 04 · Queued</span>
+<span class="font-body-md text-body-md text-on-surface-variant truncate">Verification &amp; Port Filings</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">domain</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sector Taxonomy &amp; Primary Metallurgical Route</h2>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">CN Code: 7200 Series</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Target Industrial Sub-Sector</label>
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-medium">Iron &amp; Steel (Integrated Mini-Mill)</span>
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-surface-container text-primary">Annex I Validated</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Annual Liquid Steel Melting Capacity</label>
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">65,000</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Metric Tonnes / Yr</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Production Route Architecture (Select Active Pathway)</label>
+<span class="font-label-mono text-label-mono text-tertiary">Direct Emission Factor: 0.38 tCO2e/MT</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="route-selector">
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container-high relative flex flex-col justify-between gap-space-md transition-all shadow-md">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-primary text-xl">bolt</span>
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono font-bold">SELECTED</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Electric Arc (EAF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">High scrap ratio, secondary metallurgy refining. Low Scope 1 footprint.</span>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>EEI: 88.4%</span>
+<span class="text-primary font-bold">Standard CBAM</span>
+</div>
+</div>
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">calculate</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-mono text-label-mono">AVAILABLE</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Induction Furnace (IF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cast scrap, regional power reliance. Requires custom chemical slag data.</span>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>EEI: 79.1%</span>
+<span>Regional Grid Tier</span>
+</div>
+</div>
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between gap-space-md opacity-60">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">factory</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-mono text-label-mono">HEAVY</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">BF / Basic Oxygen (BOF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Coke &amp; Sinter integrated line. High baseline Scope 1 liability.</span>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>EEI: 62.0%</span>
+<span class="text-error">High Carbon Tariff</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">inventory_2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Registered Export Products &amp; Combined Nomenclature (CN)</h2>
+</div>
+<button class="flex items-center gap-1 font-label-mono text-label-mono text-primary hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-base">add</span>
+<span>ADD LINE ITEM</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="md:col-span-4 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Crude Steel Billets</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Semi-finished non-alloy square billet</span>
+</div>
+<div class="md:col-span-3 flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-semibold">HS 7207.11</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">&lt; 0.25% C</span>
+</div>
+<div class="md:col-span-3 flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface font-medium">42,000 MT Allocation</span>
+<span class="font-body-sm text-body-sm text-tertiary">Direct Melt Tagged</span>
+</div>
+<div class="md:col-span-2 flex items-center justify-end gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-lg">tune</span>
+<span class="material-symbols-outlined text-error hover:opacity-80 cursor-pointer text-lg">delete</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="md:col-span-4 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Alloy Wire Rods in Coils</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Hot-rolled circular cross-section</span>
+</div>
+<div class="md:col-span-3 flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-semibold">HS 7228.30</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Other alloy bars</span>
+</div>
+<div class="md:col-span-3 flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface font-medium">23,000 MT Allocation</span>
+<span class="font-body-sm text-body-sm text-secondary">Rolling Mill Pre-link</span>
+</div>
+<div class="md:col-span-2 flex items-center justify-end gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-lg">tune</span>
+<span class="material-symbols-outlined text-error hover:opacity-80 cursor-pointer text-lg">delete</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Target Destination Ports (EU Entry Points)</label>
+<div class="flex flex-wrap gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest">
+<span class="flex items-center gap-1 font-label-mono text-label-mono px-2 py-1 rounded bg-surface-container-high text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                DEHAM (Port of Hamburg)
+              </span>
+<span class="flex items-center gap-1 font-label-mono text-label-mono px-2 py-1 rounded bg-surface-container-high text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                ITGOA (Port of Genoa)
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-mono text-label-mono text-on-surface-variant uppercase">Key Consignees / Importers of Record</label>
+<div class="flex flex-wrap gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest">
+<span class="font-label-mono text-label-mono px-2 py-1 rounded bg-surface-container-high text-on-surface">
+                Thyssenkrupp Materials Services GmbH
+              </span>
+<span class="font-label-mono text-label-mono px-2 py-1 rounded bg-surface-container-high text-on-surface-variant">
+                + Add Consignee EORI
+              </span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Baseline Energy &amp; Metallurgical Feedstock Parameters</h2>
+</div>
+<span class="font-label-mono text-label-mono px-space-sm py-0.5 rounded bg-surface-container-highest text-tertiary">Punjab Regional Grid Feed</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Specific Power Consumption</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface">580</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">kWh / MT</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary h-full rounded-full" style="width: 74%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Finished billet boundary</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Furnace Charge Mix (Scrap / DRI)</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-secondary">85% / 15%</span>
+</div>
+<div class="flex w-full h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary h-full" style="width: 85%;"></div>
+<div class="bg-tertiary h-full" style="width: 15%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">85% Shredded Scrap · 15% DRI</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Grid Emission Factor</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-tertiary">0.713</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">kgCO2 / kWh</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">PSPCL 66kV industrial feeder (CEA Northern Grid)</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">sensors</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">SCADA / PLC Automatic Telemetry Link</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Modbus TCP · IP: 192.168.10.45 · Node: EAF_PANEL_01</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono text-label-mono px-space-sm py-1 rounded bg-surface-container text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              POLLING EVERY 60S
+            </span>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest hover:bg-surface text-on-surface font-label-mono text-label-mono">CALIBRATE</button>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Readiness Index</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">EU CBAM TIER-2</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative w-24 h-24 flex items-center justify-center shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-metric-xl text-metric-xl text-on-surface leading-none">78%</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant text-[9px] uppercase mt-0.5">READY</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug">Verification Pipeline</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Installation boundaries match EU Annex II draft criteria for iron &amp; steel billets.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs font-label-mono text-label-mono pt-space-xs">
+<div class="flex items-center justify-between text-on-surface">
+<span>Direct Emissions Boundary:</span>
+<span class="text-primary font-bold">100% COMPLETE</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span>Indirect Grid Allocation:</span>
+<span class="text-primary font-bold">95% LINKED</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span>Precursor Supplier Verification:</span>
+<span class="text-tertiary font-bold">40% PENDING</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-lg">warning</span>
+<span class="font-label-mono text-label-mono font-bold uppercase">Missing Baseline Warning</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">Billet Reheating Furnace gas sub-meter is currently unlinked.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Under EU CBAM rules, unmetered reheating energy triggers the EU default fossil factor (penalizing gross carbon liability by +18.4%).</p>
+<button class="mt-space-xs flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-mono text-label-mono transition-colors">
+<span class="material-symbols-outlined text-base">link</span>
+<span>CONNECT GAS SUB-METER FEED</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-lg">policy</span>
+<span class="font-label-mono text-label-mono font-bold uppercase">Why this matters for CBAM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Under <strong class="text-on-surface">Regulation (EU) 2023/956</strong>, declaring accurate installation boundaries (Annex II) prevents punitive default benchmarks. Defining EAF scrap charges ensures your actual embedded direct emissions (<span class="font-label-mono text-on-surface">~0.42 tCO2e/MT</span>) are taxed instead of the default EU average (<span class="font-label-mono text-error">2.10 tCO2e/MT</span>).
+        </p>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between mt-space-xs">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Estimated Savings per 10k MT:</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">€1,411,200</span>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden relative bg-surface-container-lowest p-space-md flex flex-col gap-space-sm">
+<div class="h-28 w-full rounded-lg relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High contrast industrial steel foundry interior showing an electric arc furnace casting molten orange steel with high precision industrial sensors and digital readouts in a dark slate environment with emerald status indicators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSaZGZlGp6rqgKLM4qI_DZ2TuAvf1ib6rH5NEMLaGC10JlZ0J0-SpI72NXMccyFDsTmtnkH2Iqgaei5FABm-XOXtobvOWOEBbqwDho8rMbizmGUO4bHPwf5HD5AXivpN65VrH6IkR70LSS_pouPN0biEwG6tBI8eNcCQdo8Ogj_FRsTiJfDX3OIDaMKVNGyAucKzs0jEzqjBKa6W99h83rXepcfqNi8YzPgaCGWyQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container-highest/90 text-on-surface font-label-mono text-label-mono uppercase tracking-wider">Melt Shop 1 · Bay 4</span>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-on-surface-variant">
+<span>Transformer Capacity:</span>
+<span class="text-on-surface">45 MVA · Ludhiana Works</span>
+</div>
+</div>
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container-high/40 text-center">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-widest">DEMO DATA — Apex Steels &amp; Alloys Test Configuration</span>
+</div>
+</div>
+</div>
+<div class="sticky bottom-4 z-30 bg-surface-container-high/90 backdrop-blur-md p-space-md rounded-xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-mono text-label-mono transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Previous Step</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Save Draft</span>
+</button>
+<span class="hidden md:inline font-label-mono text-label-mono text-on-surface-variant">Auto-saved 2 minutes ago</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-headline-sm text-headline-sm font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all">
+<span>Continue to Energy &amp; Material Ingestion</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const routeSelector = document.getElementById('route-selector');
+    if (routeSelector) {
+      const cards = routeSelector.children;
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('click', function() {
+          for (let j = 0; j < cards.length; j++) {
+            cards[j].classList.remove('bg-surface-container-high', 'shadow-md');
+            cards[j].classList.add('bg-surface-container');
+            const badge = cards[j].querySelector('.font-label-mono.text-label-mono');
+            if (badge && badge.textContent === 'SELECTED') {
+              badge.textContent = 'AVAILABLE';
+              badge.className = 'px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-mono text-label-mono';
+            }
+          }
+          this.classList.remove('bg-surface-container');
+          this.classList.add('bg-surface-container-high', 'shadow-md');
+          const activeBadge = this.querySelector('.font-label-mono.text-label-mono');
+          if (activeBadge) {
+            activeBadge.textContent = 'SELECTED';
+            activeBadge.className = 'px-1.5 py-0.5 rounded bg-primary text-on-primary font-label-mono text-label-mono font-bold';
+          }
+        });
+      }
+    }
+  })();
+</script></main></div></body></html>

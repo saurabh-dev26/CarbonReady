@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1513;
+    color: #dce4e1;
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Custom scrollbars hidden to match Stitch industrial terminal look */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tabular figures for monospace data columns */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Print Stylesheet for High-Fidelity CBAM PDF Output */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    color-scheme: light !important;
+  }
+
+  /* Strip UI shell elements */
+  aside, nav, header, [role="navigation"], .print\:hidden {
+    display: none !important;
+  }
+
+  .lg\:pl-72 {
+    padding-left: 0 !important;
+  }
+
+  .pt-16 {
+    padding-top: 0 !important;
+  }
+
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .print-card {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .print-table th, .print-table td {
+    border: 1px solid #e5e7eb !important;
+    color: #111827 !important;
+  }
+
+  .print-badge {
+    background-color: #f3f4f6 !important;
+    border: 1px solid #d1d5db !important;
+    color: #111827 !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}
+
+/* Universal Reduced-Motion Accessibility Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

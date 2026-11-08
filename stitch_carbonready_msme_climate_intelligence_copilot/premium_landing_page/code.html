@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed-dim":"#68dba9","surface-tint":"#4edea3","surface-container":"#19211f","on-error":"#690005","error-container":"#93000a","on-tertiary-fixed-variant":"#334f00","on-secondary-container":"#00311f","surface-container-lowest":"#08100e","secondary-container":"#25a475","primary":"#4edea3","inverse-on-surface":"#2a3230","on-secondary":"#003825","surface-container-highest":"#2e3634","on-primary-fixed":"#002113","secondary":"#68dba9","on-secondary-fixed-variant":"#005137","on-background":"#dce4e1","tertiary-fixed":"#b2f746","surface-container-low":"#151d1b","primary-fixed-dim":"#4edea3","secondary-fixed":"#85f8c4","error":"#ffb4ab","on-surface":"#dce4e1","surface-container-high":"#232c29","surface-bright":"#333b38","tertiary-container":"#78b300","on-primary-container":"#00422b","on-tertiary-container":"#283f00","tertiary-fixed-dim":"#98da27","outline-variant":"#3c4a42","surface":"#0d1513","inverse-surface":"#dce4e1","on-primary":"#003824","primary-container":"#10b981","primary-fixed":"#6ffbbe","inverse-primary":"#006c49","on-secondary-fixed":"#002114","background":"#0d1513","on-surface-variant":"#bbcabf","tertiary":"#98da27","surface-dim":"#0d1513","outline":"#86948a","on-error-container":"#ffdad6","on-tertiary-fixed":"#121f00","on-primary-fixed-variant":"#005236","on-tertiary":"#213600","surface-variant":"#2e3634"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem",margin:"1rem","space-xs":"0.25rem","space-lg":"1.5rem","margin-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","gutter-desktop":"1.5rem",gutter:"1rem"},fontFamily:{"label-mono":["JetBrains Mono"],"headline-lg":["Geist"],"headline-sm":["Geist"],"body-md":["Inter"],"body-sm":["Inter"],"metric-md":["JetBrains Mono"],"display-lg":["Geist"],"body-lg":["Inter"],"metric-xl":["JetBrains Mono"],"headline-md":["Geist"],"label-ui":["Inter"],"display-lg-mobile":["Geist"]},fontSize:{"label-mono":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"metric-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"500"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"metric-xl":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"500"}],"label-ui":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest/60"><div class="flex items-center gap-space-sm"><img alt="CarbonReady Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA_MTqPYCc3mmLecVYdzHnfGHIAniQdkJe00OHSqssY1S7D4zWFGGZsGUotHnZqXT2wvxM5oKKqkt_Q7BXPHE0ggCeDCWHQZq9-YPFnxcGlgVqQLXeOLtkRf5s1E6SYKchLuYR4MCkaHbSvOPOPX1KoxF0HPcuhScqZbJXFEKMGfhUYBGEubVlbH8HUSh9gOQKw_4I71suZUdn_ZmmCQepb69D0McKQxv8Yt_xRNEWN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CarbonReady</span><span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Copilot OS</span></div></div><div class="flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-mono text-label-mono text-on-surface-variant">v2.4</span></div></div><div class="px-space-md py-space-sm bg-surface-container"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-base">factory</span><div class="truncate"><p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Apex Steels &amp; Alloys Ltd</p><p class="font-label-mono text-label-mono text-on-surface-variant truncate">Ludhiana Works · IND-PB-7749</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer hover:text-on-surface">unfold_more</span></div></div><nav class="flex flex-col gap-space-xs p-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(16,185,129,0.2)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-md text-body-md flex-1">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="voice-assistant" href="#"><span class="material-symbols-outlined text-lg">mic</span><span class="font-body-md text-body-md flex-1">Voice Assistant</span><span class="font-label-mono text-label-mono px-1 rounded bg-surface-container-highest text-primary">AI</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manufacturing-data" href="#"><span class="material-symbols-outlined text-lg">precision_manufacturing</span><span class="font-body-md text-body-md flex-1">Manufacturing Data</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="carbon-intelligence" href="#"><span class="material-symbols-outlined text-lg">biotech</span><span class="font-body-md text-body-md flex-1">Carbon Intelligence</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-lg">verified_user</span><span class="font-body-md text-body-md flex-1">Compliance Reports</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="green-improvements" href="#"><span class="material-symbols-outlined text-lg">trending_up</span><span class="font-body-md text-body-md flex-1">Green Improvements</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="government-schemes" href="#"><span class="material-symbols-outlined text-lg">account_balance</span><span class="font-body-md text-body-md flex-1">Government Schemes</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="report-history" href="#"><span class="material-symbols-outlined text-lg">history_edu</span><span class="font-body-md text-body-md flex-1">Audit History</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-md text-body-md flex-1">Settings &amp; Languages</span></a></nav></div><div class="p-space-md bg-surface-container-lowest/80 flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-mono text-label-mono text-on-surface-variant uppercase">EU Customs Registry</span><span class="font-label-mono text-label-mono text-primary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>XML v2.4</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">Audit Hash Key</span><span class="font-label-mono text-label-mono text-on-surface">0x7F2...CB49</span></div></div><div class="flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-high/60"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-base">support_agent</span><span class="font-label-mono text-label-mono text-on-surface-variant">MSME CBAM Desk</span></div><div class="flex items-center gap-1"><span class="font-label-mono text-label-mono text-tertiary-fixed font-semibold">WHATSAPP SYNC</span><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-primary text-base">verified</span><span class="font-label-mono text-label-mono text-primary font-medium tracking-wide uppercase">EU CBAM Q2-2025: 92% Ready</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="material-symbols-outlined text-tertiary text-sm">science</span><span class="font-label-mono text-label-mono text-tertiary uppercase">Simulation Mode / Demo Benchmark Data</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-high rounded-full p-0.5"><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono bg-surface-container-highest text-on-surface font-semibold">English</button><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">हिंदी</button><button class="px-space-sm py-0.5 rounded-full font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface">मराठी</button></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low/70 py-1 pr-space-md rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALT2g1-JELNL7J44enuvi8dyOAEJO6X8TrC8eBMQLw3KoXgvLi4-M4Qvwrpao_ajbV267oDimgvqrTz5aU10KCeYlUPnDH-MYeJK4syUOSA9auWQDB3RVKeV_0y8ATjxYalQBH9QQ2R-5hVkiXBj89_CEhyekuTjmPvsB43Xz3IxQUiuctdbf6qy-ctz2LvSSbdlp87tkb4HUfZYKL-Xjao1IznwBo3-X2LaiRHOI"/><div class="hidden lg:flex flex-col text-left"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Rajesh Sharma</span><span class="font-label-mono text-label-mono text-on-surface-variant">MD · Ludhiana Works</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-lg py-space-md"><div class="flex flex-col w-full">
+<!-- TOP IN-PAGE WORKSPACE NAVIGATION & REGULATORY TICKER -->
+<section class="w-full bg-surface-container-lowest/90 backdrop-blur-md rounded-xl p-space-sm mb-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-mono text-label-mono text-primary font-semibold tracking-wider">CLIMATE OS v2.4</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/30 hidden sm:block"></div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-primary text-sm">security</span>
+<span>MANDATE ALERT: EU CBAM DEFINITIVE PERIOD (JAN 2026) INGESTION PORTAL ACTIVE</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="hidden lg:flex items-center gap-1 bg-surface-container rounded-lg p-0.5">
+<a class="px-space-sm py-1 font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#product">Product</a>
+<a class="px-space-sm py-1 font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#voice-copilot">Voice Copilot</a>
+<a class="px-space-sm py-1 font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#cbam-shield">CBAM Tariff Shield</a>
+<a class="px-space-sm py-1 font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#green-roi">Subsidies &amp; ROI</a>
+<a class="px-space-sm py-1 font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" href="#verifier-audit">Audit Ledger</a>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-mono text-label-mono transition-colors" href="#demo-sandbox">Explore Live Demo</a>
+<a class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-ui text-label-ui font-semibold shadow-sm transition-all" href="#onboard">Get Started (Free MSME Tier)</a>
+</div>
+</section>
+<!-- HERO SECTION -->
+<section class="relative w-full rounded-2xl bg-gradient-to-b from-surface-container-lowest via-surface-container-low to-surface-container p-space-lg lg:p-space-xl mb-space-xl overflow-hidden shadow-xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 bottom-0 w-80 h-80 bg-tertiary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Badges Cluster -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high font-label-mono text-label-mono text-secondary-fixed">
+<span class="material-symbols-outlined text-sm">verified_user</span> EU CBAM 2026 Ready
+          </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high font-label-mono text-label-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">balance</span> BRSR Core Aligned
+          </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high font-label-mono text-label-mono text-tertiary">
+<span class="material-symbols-outlined text-sm">mic_external_on</span> Acoustic Industrial AI
+          </span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight font-semibold">
+          Carbon Intelligence. <br/>
+<span class="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary">
+            Made Accessible for Exporters.
+          </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Empowering Indian MSME steel, casting, and engineering exporters with voice-first shopfloor intake, automated IPCC Scope 1 &amp; 2 mathematical attribution, and cryptographically signed EU CBAM communication XML dossiers.
+        </p>
+<!-- CTA cluster -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<button class="px-space-lg py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-ui text-label-ui font-bold flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all" id="launch-onboarding-btn">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+<span>Launch Copilot &amp; Onboard</span>
+</button>
+<button class="px-space-md py-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-ui text-label-ui font-medium flex items-center justify-center gap-2 transition-colors" id="walkthrough-btn">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+<span>Watch 2-Min Factory Walkthrough</span>
+</button>
+</div>
+<!-- Metric micro-ribbon -->
+<div class="grid grid-cols-3 gap-space-md pt-space-md">
+<div class="flex flex-col">
+<span class="font-metric-md text-metric-md text-primary font-bold">€142,500</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Avg Penalty Avoided / 1k MT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">&lt; 90 Sec</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Daily WhatsApp Voice Audit</span>
+</div>
+<div class="flex flex-col">
+<span class="font-metric-md text-metric-md text-tertiary font-bold">XML v2.4</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Direct DG TAXUD Standard</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Live Speech Ingestion Preview -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-mono text-label-mono text-on-surface font-semibold uppercase">Real-Time Intake Terminal</span>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary font-medium">Ludhiana Meltshop #3</span>
+</div>
+<!-- Audio Ingestion Mock Waveform -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<span class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-sm">mic</span> Hindi-English Industrial Audio
+              </span>
+<span>114.2 kHz • 82 dB Floor Denoised</span>
+</div>
+<!-- Audio Bar Wave Visualizer -->
+<div class="h-9 flex items-center justify-between gap-1 px-1 bg-surface-container-lowest/80 rounded">
+<div class="w-1.5 h-3 bg-primary/40 rounded-full"></div>
+<div class="w-1.5 h-5 bg-primary/70 rounded-full"></div>
+<div class="w-1.5 h-7 bg-primary rounded-full animate-pulse"></div>
+<div class="w-1.5 h-4 bg-primary/80 rounded-full"></div>
+<div class="w-1.5 h-6 bg-secondary-fixed rounded-full"></div>
+<div class="w-1.5 h-8 bg-primary rounded-full animate-bounce"></div>
+<div class="w-1.5 h-5 bg-primary/60 rounded-full"></div>
+<div class="w-1.5 h-3 bg-primary/40 rounded-full"></div>
+<div class="w-1.5 h-6 bg-secondary-fixed rounded-full"></div>
+<div class="w-1.5 h-4 bg-primary/80 rounded-full"></div>
+<div class="w-1.5 h-2 bg-primary/30 rounded-full"></div>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface bg-surface-container-high/70 p-2 rounded italic">
+              "Aaj shift 2 mein 3 heats chalayi EAF par. 145 MT mild scrap charge kiya, 48,200 kWh grid meter reading aur 4.2 MT calcined petroleum coke use hua."
+            </p>
+</div>
+<!-- Extraction Output Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/90 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Automated GHG Allocation</span>
+<span class="font-label-mono text-label-mono text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> IPCC Verified
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2 rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block">Scope 1 (Direct Coke)</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">13.24 <span class="font-label-mono text-xs text-on-surface-variant">tCO2e</span></span>
+</div>
+<div class="p-2 rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block">Scope 2 (CEA Grid Mix)</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">34.70 <span class="font-label-mono text-xs text-on-surface-variant">tCO2e</span></span>
+</div>
+</div>
+<!-- Intensity Comparison -->
+<div class="p-2 rounded bg-surface-container-lowest flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface font-medium">Actual Verified Intensity</span>
+<span class="text-primary font-bold">1.42 tCO2e / MT Steel</span>
+</div>
+<!-- Bar gauge -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden relative">
+<div class="bg-primary h-full w-[48%] rounded-full"></div>
+<div class="absolute right-[22%] top-0 bottom-0 w-0.5 bg-error z-10" title="EU Default Penalty Benchmark (2.15 tCO2e/MT)"></div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-[10px] text-on-surface-variant">
+<span>Apex Steels Real Value</span>
+<span class="text-error font-medium">EU Default Penalty Threshold: 2.15</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono text-label-mono px-1">
+<span class="flex items-center gap-1 text-primary"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> DG TAXUD CBAM Ready</span>
+<span class="text-on-surface">Audit Tag: #CBAM-2025-Q2-LUD49</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: HOW IT WORKS — FROM MELTER FLOOR TO EU CUSTOMS -->
+<section class="w-full mb-space-xl flex flex-col gap-space-lg" id="product">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest block mb-1">Architecture Pipeline</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">From Melter Floor to EU Customs Clearance</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Designed deliberately around raw Indian industrial environments: no complex ERP overhaul, no consultant lock-in, just verified sovereign math.
+      </p>
+</div>
+<!-- 4 Step Interactive Pipeline Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container transition-all group shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">STAGE 01</span>
+<span class="material-symbols-outlined text-secondary text-2xl group-hover:scale-110 transition-transform">record_voice_over</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Multilingual Shopfloor Voice Ingestion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Supervisors report daily heats, fuel usage, and raw billets via WhatsApp audio notes in Hindi, Marathi, Punjabi, or English with acoustic noise cancellation for high-decibel meltshops.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-mono text-label-mono text-secondary-fixed flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">file_download_done</span> Low-latency Whisper v3 fine-tune
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container transition-all group shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">STAGE 02</span>
+<span class="material-symbols-outlined text-tertiary text-2xl group-hover:scale-110 transition-transform">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Activity Disaggregation &amp; Emission Factors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Intelligent parsing separates direct fuel consumption (Scope 1) and grid electricity (Scope 2), mapping against latest CEA India Grid Factors and IPCC 2006 Tier-2 defaults.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-mono text-label-mono text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">calculate</span> Deterministic Math Engine
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container transition-all group shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">STAGE 03</span>
+<span class="material-symbols-outlined text-primary text-2xl group-hover:scale-110 transition-transform">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">CBAM Communication Template XML v2.4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Instant structured file generation matching European Commission DG TAXUD quarterly reporting templates, including precursor scrap allocations and production routes.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-mono text-label-mono text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">integration_instructions</span> Automated Verifier Schema
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container transition-all group shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">STAGE 04</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl group-hover:scale-110 transition-transform">currency_rupee</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Decarbonization ROI &amp; Subsidy Matcher</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Translates carbon liabilities into CAPEX modernization proposals, auto-matching with SIDBI Green Finance (MSE-GIFT), RAMP subsidies, and Ministry of Steel green programs.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-mono text-label-mono text-tertiary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">savings</span> Up to ₹45L Capital Subsidies
+        </div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SIGNATURE FEATURE — VOICE-FIRST SHOPFLOOR INTAKE -->
+<section class="w-full bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl mb-space-xl shadow-lg" id="voice-copilot">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Media Visual Presentation -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<img class="w-full h-80 object-cover object-center" data-alt="Indian foundry and steel meltshop floor with industrial electric arc furnace operator wearing safety helmet using a rugged smartphone for voice telemetry intake, glowing amber molten metal reflection with contrasting clean emerald digital heads up display UI overlay in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGfamjT65h7hBZ1G708XrvOQKNRC0YWXPN1TNPQg3aCdai_m6QoiXEPsM-02oRGkbx0RIzWDm0Hz1yinEJWsf4ZKW-JYj_tz-7PtQabo6mfOmV-Av5jr2HZnfzC85wvXwETe1m2m3n-bjGn0F3pEQPpxflPB6rqn3LafYjJAsu9vYC9tHg--ynkq2jJ1tgGwUBm9jyCRtW3jOqpRAt_zncH1YYC5Ho_j4QBqAZ7cc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-high/90 backdrop-blur-md p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">graphic_eq</span>
+<div>
+<p class="font-label-mono text-label-mono text-on-surface font-semibold">WhatsApp Audio Pipeline • Auto-Syncd</p>
+<p class="font-label-mono text-label-mono text-on-surface-variant">Model: Apex-Denoise-Foundry-14B (99.4% intent parse)</p>
+</div>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-bold">LATENCY 480ms</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono text-label-mono text-primary block mb-1">ACOUSTIC PROFILE</span>
+<p class="font-body-sm text-body-sm text-on-surface">Calibrated for +95dB hammer forging, ladle cranes, and blast blowers.</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono text-label-mono text-secondary-fixed block mb-1">LOCAL DIALECTS</span>
+<p class="font-body-sm text-body-sm text-on-surface">Native mixed vernacular understanding: Hinglish, Marathi, and Punjabi terms.</p>
+</div>
+</div>
+</div>
+<!-- Feature Details & Human-In-The-Loop Workflow -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-mono text-label-mono text-secondary-fixed uppercase tracking-wider">Acoustic Industrial AI</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Zero Typing on the Shop Floor. Just Press Mic or Send WhatsApp.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Indian SME shopfloors cannot manage cumbersome desktop carbon accounting forms. CarbonReady connects directly to factory managers via voice channels, extracting heat weights, electrode erosion, diesel consumption, and transformer logs in natural colloquial language.
+        </p>
+<!-- Step-by-Step Acoustic Guardrail Points -->
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">noise_aware</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Bespoke Foundry Spectral Filter</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Isolates speech formants from induction hum and continuous casting mechanical frequencies.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-xl mt-0.5">thumb_up_alt</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Human-In-The-Loop Verification Card</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Supervisor receives a clean WhatsApp summary card: "Calculated 145 MT mild scrap. Tap 1 to Confirm, 2 to Edit". Zero ambiguous estimates make it into the audit ledger.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">offline_pin</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Automated Reconciliation with Bill of Entry &amp; Weighbridge</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Voice declarations automatically cross-checked against incoming scrap weighbridge scale APIs and monthly DISCOM electricity invoices.</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-ui text-label-ui flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-base">mic</span>
+<span>Test Shopfloor Microphone Demo</span>
+</button>
+<span class="font-label-mono text-label-mono text-on-surface-variant">No hardware installation required</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE MSME EXPORT THREAT & PROTECTION SHIELD -->
+<section class="w-full mb-space-xl flex flex-col gap-space-lg" id="cbam-shield">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-mono text-label-mono text-error uppercase tracking-wider">High Exposure Risk Mitigation</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">The MSME Export Threat &amp; Protection Shield</h2>
+</div>
+<div class="px-3 py-1 rounded bg-surface-container-high text-tertiary font-label-mono text-label-mono">
+        DEMO BENCHMARK DATA • MODELLED ON 1,000 MT STEEL BILLET CONSIGNMENT
+      </div>
+</div>
+<!-- Analytical Comparison Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Default Punitive Penalty Scenario -->
+<div class="lg:col-span-6 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold uppercase">UNPROTECTED SCENARIO</span>
+<span class="font-label-mono text-label-mono text-error font-medium">EU Default Factor Imposed</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Punitive Default Benchmark Tariff</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Without primary factory data, EU customs officials assess your consignment at the highest EU blast furnace benchmark plus markup.
+          </p>
+<div class="p-space-md rounded-lg bg-surface-container-lowest mt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assumed Carbon Intensity</span>
+<span class="font-label-mono text-label-mono text-error font-bold">2.15 tCO2e / MT</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">EU ETS Carbon Certificate Cost (€85/t)</span>
+<span class="font-label-mono text-label-mono text-error font-bold">€182.75 / MT</span>
+</div>
+<div class="h-px bg-surface-container-high my-1"></div>
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-medium">Total Border Liability (1,000 MT)</span>
+<span class="font-metric-md text-metric-md text-error font-bold">€182,750</span>
+</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant text-right">
+              Approx. ₹1.64 Crore Margin Wipeout
+            </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-error text-base">warning</span> Result: EU Importers switch orders to Turkish or German suppliers.
+        </div>
+</div>
+<!-- CarbonReady Protected Verified Route -->
+<div class="lg:col-span-6 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-semibold uppercase">PROTECTED WITH CARBONREADY</span>
+<span class="font-label-mono text-label-mono text-primary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Primary Scrap Verification
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Empirical Scrap &amp; EAF Production Ledger</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            CarbonReady documents your actual scrap input ratios, alloy additives, and verified electricity intensity, proving actual clean emissions.
+          </p>
+<div class="p-space-md rounded-lg bg-surface-container-lowest mt-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified Intensity (EAF + Recycled Scrap)</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">1.42 tCO2e / MT</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calculated CBAM Tariff (€85/t applied to diff)</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">€40.25 / MT</span>
+</div>
+<div class="h-px bg-surface-container-high my-1"></div>
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-medium">Total Border Liability (1,000 MT)</span>
+<span class="font-metric-md text-metric-md text-primary font-bold">€40,250</span>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-secondary-fixed">
+<span class="font-bold">Avoided Tariff Surcharge</span>
+<span class="font-bold font-metric-md text-metric-md">+€142,500 Saved</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between relative z-10 font-label-mono text-label-mono">
+<span class="text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-base">verified</span> 78% Tariff Cost Mitigation</span>
+<span class="text-on-surface-variant">Validated XML Export</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: COMPREHENSIVE DECARBONIZATION & FUNDING ENGINE -->
+<section class="w-full mb-space-xl flex flex-col gap-space-lg" id="green-roi">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-tertiary uppercase tracking-widest block mb-1">Financial &amp; Modernization Hub</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Decarbonization ROI &amp; Government Funding Engine</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Compliance is only half the battle. Turn carbon liabilities into bankable upgrade projects backed by subsidized Indian sovereign MSME grants.
+      </p>
+</div>
+<!-- Bento Grid of Upgrade Modules + Matching Schemes -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Opportunity 1: WHRB -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-2xl">heat_pump</span>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-primary">CAPEX ROI: 14 MOS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Waste Heat Recovery (WHRB)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Capture flue gas sensible heat from billet reheating furnaces to pre-heat scrap charges or generate 180kW auxiliary shopfloor steam.
+          </p>
+<div class="p-space-sm rounded bg-surface-container flex flex-col gap-1 font-label-mono text-label-mono">
+<div class="flex justify-between text-on-surface-variant">
+<span>Potential Carbon Dip:</span>
+<span class="text-on-surface font-medium">-0.24 tCO2e/MT</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Annual Power Savings:</span>
+<span class="text-primary font-medium">₹38.5 Lakhs</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<span class="font-label-mono text-[10px] text-tertiary uppercase font-semibold">Matched Scheme</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">SIDBI MSE-GIFT (Green Financing)</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">100% interest subvention up to 200 bps</span>
+</div>
+</div>
+<!-- Opportunity 2: Induction to EAF Modernization -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-2xl">electric_bolt</span>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-secondary">CAPEX ROI: 19 MOS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Induction Furnace Refractory &amp; Coil Tuning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Upgrade lining materials and install harmonic filters to decrease electrical losses by 34 kWh per metric ton of melted steel.
+          </p>
+<div class="p-space-sm rounded bg-surface-container flex flex-col gap-1 font-label-mono text-label-mono">
+<div class="flex justify-between text-on-surface-variant">
+<span>Potential Carbon Dip:</span>
+<span class="text-on-surface font-medium">-0.18 tCO2e/MT</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Specific Energy Drop:</span>
+<span class="text-secondary font-medium">620 → 586 kWh/t</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<span class="font-label-mono text-[10px] text-tertiary uppercase font-semibold">Matched Scheme</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">ZED Gold Certification Grant</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Up to ₹5 Lakh reimbursement on tech upgrades</span>
+</div>
+</div>
+<!-- Opportunity 3: Solar Open Access Transition -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary text-2xl">solar_power</span>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-tertiary">CAPEX ROI: 26 MOS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Green Open Access (Renewable PPA)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Procure offsite wind/solar under the Ministry of Power 100 kW open-access threshold to swap Scope 2 coal-heavy DISCOM tariffs.
+          </p>
+<div class="p-space-sm rounded bg-surface-container flex flex-col gap-1 font-label-mono text-label-mono">
+<div class="flex justify-between text-on-surface-variant">
+<span>Potential Carbon Dip:</span>
+<span class="text-on-surface font-medium">-0.49 tCO2e/MT</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Landed Tariff Delta:</span>
+<span class="text-tertiary font-medium">₹3.40 / unit saved</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm rounded bg-surface-container-high flex flex-col gap-1">
+<span class="font-label-mono text-[10px] text-tertiary uppercase font-semibold">Matched Scheme</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">World Bank-RAMP MSME Green Fund</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">Direct collateral-free credit support lines</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INSTITUTIONAL TRUST & VERIFIER DOSSIER -->
+<section class="w-full bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl mb-space-xl shadow-lg" id="verifier-audit">
+<div class="flex flex-col lg:flex-row gap-space-xl items-center">
+<!-- Verifier Text -->
+<div class="lg:w-1/2 flex flex-col gap-space-sm">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Institutional Auditability</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Pre-Engineered for TÜV SÜD, SGS &amp; Bureau Veritas Verification.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Independent CBAM verification isn’t an afterthought—it’s built into every record. CarbonReady creates immutable, SHA-256 hashed audit trials adhering to ISO 14064-1/3 and European Commission standard verification protocols.
+        </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-secondary-fixed block">ISO COMPLIANCE</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">ISO 14064-1 &amp; ISO 14067</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-secondary-fixed block">LEDGER INTEGRITY</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Deterministic Cryptographic Hashing</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-secondary-fixed block">DG TAXUD PROTOCOL</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">CBAM XML Communication v2.4</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container">
+<span class="font-label-mono text-label-mono text-secondary-fixed block">SEBI MANDATES</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">BRSR Core Key Attributes</span>
+</div>
+</div>
+</div>
+<!-- Live Mock Audit Trail Component -->
+<div class="lg:w-1/2 w-full">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">Live Audit Trail Inspection</span>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">BATCH: #EXP-2025-05-992</span>
+</div>
+<!-- Step Progress Node Chain -->
+<div class="flex flex-col gap-3 relative pl-4">
+<div class="absolute left-1.5 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<!-- Node 1 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-3 h-3 rounded-full bg-primary -ml-[18px] mt-1 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
+<div class="flex-1 bg-surface-container p-2.5 rounded">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface font-semibold">1. Shopfloor Sensor &amp; Voice Declaration</span>
+<span class="text-primary font-medium">PASSED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">EAF Heat Log #849 · 145 MT Scrap · Operator ID: RS-44</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant/70 mt-1">Hash: 8a4c11b...90e3c</p>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-3 h-3 rounded-full bg-primary -ml-[18px] mt-1 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
+<div class="flex-1 bg-surface-container p-2.5 rounded">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface font-semibold">2. DISCOM Tariff &amp; Coal Blend Reconciliation</span>
+<span class="text-primary font-medium">MATCHED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PSPCL 66kV Substation Feeder Reading · 0.82 kg CO2/kWh</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant/70 mt-1">Hash: 3df9012...fa819</p>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-3 h-3 rounded-full bg-primary -ml-[18px] mt-1 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
+<div class="flex-1 bg-surface-container p-2.5 rounded">
+<div class="flex items-center justify-between font-label-mono text-label-mono">
+<span class="text-on-surface font-semibold">3. Third-Party Verifier API Signature Ready</span>
+<span class="text-tertiary font-medium">SIGNABLE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Package: ISO 14064-3 Attestation Bundle generated</p>
+<p class="font-label-mono text-[10px] text-on-surface-variant/70 mt-1">Hash: 0x9812A...CB49D</p>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-high/60 flex items-center justify-between mt-1">
+<span class="font-label-mono text-label-mono text-on-surface-variant">Verifier Access Secret Token:</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">cbam_verify_live_7x89...</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE DEMO SANDBOX CALLOUT -->
+<section class="w-full bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low rounded-2xl p-space-lg lg:p-space-xl mb-space-xl shadow-lg flex flex-col gap-space-md" id="demo-sandbox">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div>
+<span class="font-label-mono text-label-mono text-tertiary-fixed uppercase font-semibold">Immediate Action</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Test the Simulation With Your Foundry Data</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Enter your current monthly production and primary melting furnace type. Instantly compare your projected CBAM exposure vs your actual protected savings.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm w-full md:w-auto">
+<button class="px-space-lg py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-ui text-label-ui font-bold shadow-md transition-all" id="calc-trigger-btn">
+          Calculate Factory Exposure
+        </button>
+</div>
+</div>
+<!-- Live Calculator Sandbox Inputs -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<label class="font-label-mono text-label-mono text-on-surface-variant">MONTHLY BILLET OUTPUT (MT)</label>
+<input class="bg-surface-container-high px-3 py-2 rounded font-metric-md text-metric-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="input-tonnage" type="number" value="1200"/>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<label class="font-label-mono text-label-mono text-on-surface-variant">FURNACE TECHNOLOGY</label>
+<select class="bg-surface-container-high px-3 py-2.5 rounded font-label-mono text-label-mono text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="input-furnace">
+<option value="eaf">Electric Arc Furnace (Scrap Heavy)</option>
+<option value="induction">Coreless Induction Furnace</option>
+<option value="bf">Submerged Arc / Blast Furnace Route</option>
+</select>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant">ESTIMATED AVOIDABLE PENALTY</span>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-xl text-metric-xl text-primary font-bold" id="output-savings">€171,000</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">/ Quarter</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ONBOARDING MODAL TRIGGER / FINAL PERSUASION -->
+<section class="w-full rounded-2xl bg-surface-container-lowest p-space-lg lg:p-space-xl mb-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-xl" id="onboard">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold">Free Tier for Indian MSMEs</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+        Start Your Factory Pilot Today. No Credit Card, No ERP Overhaul.
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Includes free 30-day access to our Hindi/Marathi WhatsApp Voice Copilot, automated CBAM XML generator for 1 export shipment, and SIDBI MSE-GIFT grant application draft.
+      </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm w-full lg:w-auto">
+<input class="px-space-md py-3 rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary w-full sm:w-80" placeholder="Enter Work Email or WhatsApp No." type="text"/>
+<button class="px-space-lg py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-ui text-label-ui font-bold whitespace-nowrap shadow-md transition-all">
+        Claim MSME License
+      </button>
+</div>
+</section>
+<!-- ENTERPRISE FOOTER & REGULATORY DISCLOSURE -->
+<footer class="w-full bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-md shadow-md mb-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg pb-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CarbonReady</span>
+<span class="font-label-mono text-label-mono text-primary px-1.5 py-0.5 rounded bg-surface-container">OS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Industrial Climate Intelligence Operating System tailored for Indian MSME exporters under the EU CBAM mandate and global ESG scrutiny.
+        </p>
+</div>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold uppercase mb-1">Architecture</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#voice-copilot">Acoustic Whisper Denoising</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#product">IPCC Scope 1 &amp; 2 Math</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#verifier-audit">SHA-256 Ledger Hash</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#product">CBAM XML v2.4 Generation</a>
+</div>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold uppercase mb-1">MSME Subsidies</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#green-roi">SIDBI MSE-GIFT Desk</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#green-roi">ZED Certification Portal</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#green-roi">Ministry of MSME - RAMP</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#green-roi">Bureau of Energy Efficiency (BEE)</a>
+</div>
+<div class="flex flex-col gap-1 font-body-sm text-body-sm">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold uppercase mb-1">Global Desks</span>
+<span class="text-on-surface-variant">Ludhiana Works: Focal Point Industrial Area</span>
+<span class="text-on-surface-variant">Pune Hub: Bhosari MIDC Section II</span>
+<span class="text-on-surface-variant">Brussels Liaison: Rue de la Loi 227</span>
+<span class="font-label-mono text-label-mono text-primary mt-1">Direct Help: +91 (0) 161 492 8800</span>
+</div>
+</div>
+<!-- MANDATORY LEGAL / REGULATORY COMPLIANCE DISCLAIMER -->
+<div class="pt-space-sm bg-surface-container rounded-lg p-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-tertiary text-base">info</span>
+<span>REGULATORY DISCLAIMER: DEMO BENCHMARK DATA — Requires independent accredited verifier sign-off for legal CBAM declaration submitted to DG TAXUD.</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">© 2025 CarbonReady Technologies Pvt. Ltd. All rights reserved.</span>
+</div>
+</footer>
+<!-- CLIENT-SIDE MICRO-INTERACTIONS SCRIPT -->
+<script>
+    // Live Dynamic Exposure Calculation for Sandbox
+    const tonnageInput = document.getElementById('input-tonnage');
+    const furnaceInput = document.getElementById('input-furnace');
+    const outputSavings = document.getElementById('output-savings');
+
+    function updateSandboxCalculations() {
+      if (!tonnageInput || !furnaceInput || !outputSavings) return;
+      const tons = parseFloat(tonnageInput.value) || 0;
+      const furnace = furnaceInput.value;
+      
+      let baseDiff = 0.73; // tCO2e saved per MT vs EU default (2.15 - 1.42)
+      if (furnace === 'induction') baseDiff = 0.58;
+      if (furnace === 'bf') baseDiff = 0.25;
+
+      const etsPrice = 85; // EUR per ton
+      const calculatedSavings = Math.round(tons * baseDiff * etsPrice);
+      
+      outputSavings.textContent = '€' + calculatedSavings.toLocaleString();
+    }
+
+    if (tonnageInput && furnaceInput) {
+      tonnageInput.addEventListener('input', updateSandboxCalculations);
+      furnaceInput.addEventListener('change', updateSandboxCalculations);
+    }
+
+    // Interactive Trigger Feedback
+    const calcBtn = document.getElementById('calc-trigger-btn');
+    if (calcBtn) {
+      calcBtn.addEventListener('click', () => {
+        updateSandboxCalculations();
+        calcBtn.textContent = 'Updated Real-Time Savings!';
+        setTimeout(() => {
+          calcBtn.textContent = 'Calculate Factory Exposure';
+        }, 1800);
+      });
+    }
+
+    const launchBtn = document.getElementById('launch-onboarding-btn');
+    if (launchBtn) {
+      launchBtn.addEventListener('click', () => {
+        const target = document.getElementById('onboard');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
+    const walkthroughBtn = document.getElementById('walkthrough-btn');
+    if (walkthroughBtn) {
+      walkthroughBtn.addEventListener('click', () => {
+        const target = document.getElementById('voice-copilot');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  </script>
+</div></main></div></body></html>
